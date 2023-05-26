@@ -19,7 +19,7 @@ class MainWindow(QMainWindow):      #创建一个MainWindow类，继承自QMainW
         # 创建发送按钮
         self.sendButton = QPushButton("发送", self)       #创建一个按钮，名为发送，并添加到MainWindow
         self.sendButton.clicked.connect(self.sendImage)     #将点击按钮之后的信号，连接到sendImage函数
-        self.sendButton.setGeometry(120, 10, 100, 30)       #设置位置和大小
+        self.sendButton.setGeometry(120, 10, 100, 30)       #设置位置和大小（左上角横坐标，左上角纵坐标，宽度，高度）
         self.sendButton.setEnabled(False)           #将sendButton按钮设置为不可用状态
 
         # 创建图片显示区域
